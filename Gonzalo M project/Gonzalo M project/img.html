@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #eef0f6;
+}
+img{
+    pointer-events: none;
+}
+.s-container ul{
+     list-style-type: none;
+     user-select: none;
+     display: flex;
+     overflow-y: auto;
+     padding: 20px 0
+}
+.s-container ul li{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.s-container ul li:first-child{
+    padding-left: 20px;
+}
+.s-container ul li:last-child{
+    padding-right: 20px;
+}
+.s-container ul li .s{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: rgb(246, 238, 238);
+    padding: 1px;
+    position: relative;
+}
+.s-container ul li.has-s .s{
+    padding: 0px;
+    background: linear-gradient(45deg, #f09433 0%)
+}
+.s-container ul li .s img{
+    padding: 4px;
+
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+}
+.s-container ul li span{
+    color: rgba(8, 8, 8, 0.85);
+    font-weight: 300;
+    font-size: 15px;
+    max-width: 85px;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <a href="https://itcloset.com/collections/daniela-blasco" target="_blank">
+    <div> 
+        <center>
+            <img src="Big Image.png" alt="big" style="width:35%;height:35%;">
+        </center>
+    </div>
+</a>
+    <div class="s-container">
+        <ul>
+            <li>
+                <a href="https://itcloset.com/collections/daniela-blasco" target="_blank"> <div class="s" >
+                    <img src="Big Image.png" alt="">
+                </div>
+            </a>
+                <span class="user"> Ana Gisbert</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/patri-goe" target="_blank"> 
+                <div class="s">
+                    <img src="small image 1.png" alt="">
+                </div>
+            </a>
+                <span class="user"> Nuria Garrido</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/barbara-perez" target="_blank"> 
+                <div class="s">
+                    <img src="small image 2.png" alt="">
+                </div></a>
+                <span class="user">Marta González</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 3.png" alt="">
+                </div></a>
+                <span class="user">María Maronda</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/coco-constans" target="_blank"> 
+                <div class="s">
+                    <img src="small image 4.png" alt="">
+                </div></a>
+                <span class="user">Marta Manjón</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/daniela-blasco" target="_blank"> 
+                <div class="s">
+                    <img src="small image 5.png" alt="">
+                </div></a>
+                <span class="user">  Ana Gisbert</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/patri-goe" target="_blank"> 
+                <div class="s">
+                    <img src="small image 1.png" alt="">
+                </div></a>
+                <span class="user">  Nuria Garrido,</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/barbara-perez" target="_blank"> 
+                <div class="s">
+                    <img src="small image 2.png" alt="">
+                </div></a>
+                <span class="user">Marta González</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 3.png" alt="">
+                </div></a>
+                <span class="user">María Maronda</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 4.png" alt="">
+                </div></a>
+                <span class="user">Marta Manjón</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 5.png" alt="">
+                </div></a>
+                <span class="user">Ana Gisbert,</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 1.png" alt="">
+                </div></a>
+                <span class="user"> Nuria Garrido,</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 2.png" alt="">
+                </div></a>
+                <span class="user">Marta González</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 3.png" alt="">
+                </div></a>
+                <span class="user">María Maronda</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 4.png" alt="">
+                </div></a>
+                <span class="user">Marta Manjón</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 5.png" alt="">
+                </div></a>
+                <span class="user">  Ana Gisbert</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 1.png" alt="">
+                </div></a>
+                <span class="user"> Nuria Garrido,</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 2.png" alt="">
+                </div></a>
+                <span class="user">Marta González</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 3.png" alt="">
+                </div></a>
+                <span class="user">María Maronda</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 4.png" alt="">
+                </div></a>
+                <span class="user">Marta Manjón</span>
+            </li>
+            <li class="has-s">
+                <a href="https://itcloset.com/collections/jenn-muchelas" target="_blank"> 
+                <div class="s">
+                    <img src="small image 5.png" alt="">
+                </div></a>
+                <span class="user"> Marta Manjón</span>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
